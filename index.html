@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe a palavra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Pesquisei no Gemini como executar uma função assim que a página HTML for carregada
+     Uma das opções foi o método "onload" no <body> irei utiliza-la neste momento para facilitar-->
+<body onload="carregarPalavra()">
+    <header>
+        <h1>Jogo para adivinhar as palavras</h1>
+    </header>
+    <main>
+        <div>
+            <h2 id="titulo"></h2>
+        </div>
+        <div class="squares" id="blocos"></div>
+        <p id="dica"></p>
+        <div>
+            <p class="atencao" id="validacao"></p>
+            <input type="text" placeholder="Digite aqui a palavra" id="campo-palavra">
+            <button id="verifica" onclick="verificar()">Verificar</button>
+        </div>
+        <p id="tentativas"></p>
+        <section id="resultado"></section>
+    </main>
+    <footer>
+        <p>2024 Adivinhe a palavra. Todos os direitos reservados.</p>
+        <p>Para mais informações, entre em contato com o <a href="mailto:carloscardoso.telefonica@gmail.com">proprietário</a>.</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 

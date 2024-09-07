@@ -1,0 +1,221 @@
+/* styles.css */
+/* Este documento inicial foi gerado através da solicitação que fiz no Gemini */
+/* Cada item que eu alterar, apagar ou incluir, utilizarei a tag #CAC para demarcar */
+
+  /* Estilos gerais */
+  body {
+    font-family: Arial, sans-serif;
+    /* CAC Início*/
+    text-align: center;
+    background-color: #f0f0f0;
+    /* CAC Fim*/
+  }
+  
+  /* Cabeçalho principal */
+  header {
+    /* CAC Início */
+    /* text-align: center; /* Centraliza o texto */ 
+    /* background-color: #9932CC; /* Roxo claro */
+    /* padding: 10px; /* Adiciona um espaço interno */
+    background-color: #d1a3c8; /* Lilás */
+    padding: 1px; /* Adiciona um espaço interno */
+    /* CAC Fim */
+    color: white;
+  }
+  
+  /* Caixa de texto */
+  input[type="text"] {
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px;
+    /* CAC Início */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 2rem;
+    /* CAC Fim */
+  }
+  
+  /* Botão */
+  button {
+    background-color: limegreen;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer; /* Muda o cursor para mão ao passar o mouse */
+    /* CAC Início */
+    /* border: none; /* Remove a borda padrão */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 2rem;
+    /* CAC Fim */
+  }
+  button:hover {
+    background-color: green; /* Escurece o verde ao passar o mouse */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  }
+  
+  /* Títulos menores */
+  h2 {
+    font-weight: bold;
+  }
+  h3 {
+    font-weight: normal;
+    margin-bottom: 2rem;
+  }
+  
+  /* Quadrado */
+  div.square {
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    /* CAC Início */
+    /* width: 100px;
+    height: 100px;
+    background-color: #333;
+    line-height: 100px; /* Centraliza o texto verticalmente */
+    width: 40px;
+    height: 40px;
+    line-height: 40px; /* Centraliza o texto verticalmente */
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 2rem;
+    margin: 5px;
+    /* CAC Fim */
+  }
+  #squares {
+    margin: 20px 0;
+  }
+  
+  /* Links */
+  a {
+    /* CAC Início */
+    color: #007bff;
+    /* CAC Fim */
+    text-decoration: none; /* Remove o sublinhado padrão */
+  }
+  a:hover {
+    /* CAC Início */
+    color: blue;
+    /* CAC Fim */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
+
+/* Todo o trecho acima foi o que o Gemini devolveu, incluindo as alterações que realizei */
+/* A partir daqui, tudo que será incluído no CSS será para atendimento da regra de negócio */
+  footer {
+    background-color: #d1a3c8; /* Lilás */
+    color: black; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 12px; /* Tamanho da fonte */
+  }
+
+  /* Estilo para mensagem de atenção */
+  .atencao {
+    color: red;
+  }
+
+  /* Estilo para quadrado quando iniciar o jogo */
+  .bloco-inicial {
+    background-color: grey
+  }
+
+  /* Estilo para quadrado quando resultado correto */
+  .bloco-correto {
+    background-color: green;
+  }
+
+  /* Estilo para quadrado quando resultado incorreto */
+  .bloco-incorreto {
+    background-color: red;
+  }
+
+  /* Estilo para frase quando resultado correto */
+  .frase-correta {
+    color: green;
+    margin-top: 2.5rem;
+  }
+
+  /* Estilo para frase quando resultado incorreto */
+  .frase-incorreta {
+    color: red;
+    margin-top: 2.5rem;
+  }
+
+  /* Estilo para botão de novo jogo */
+  .novo-jogo {
+    background-color: #2196F3;
+    margin-top: 0rem;
+  }
+  .novo-jogo:hover {
+    background-color: blue;
+  }  
+
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+  /* Ajustes para telas menores que 768px */
+  body {
+    font-size: 16px; /* Reduzir o tamanho da fonte */
+  }
+
+  header {
+    padding: 5px; /* Reduzir o padding */
+  }
+
+  input[type="text"],
+  button {
+    width: 100%; /* Ocupar toda a largura da tela */
+    margin-bottom: 1rem; /* Espaçamento entre os elementos */
+  }
+
+  .square {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  #squares {
+    display: flex;
+    flex-wrap: wrap; /* Quebrar as linhas quando necessário */
+    justify-content: center; /* Centralizar os quadrados */
+  }
+
+  footer {
+    position: static; /* Remover o posicionamento absoluto */
+    margin-top: 2rem; /* Adicionar margem superior */
+  }
+}
+
+/* Media query para smartphones (largura máxima de 480px) */
+@media (max-width: 480px) {
+  /* Ajustes para smartphones */
+  body {
+    font-size: 14px; /* Reduzir ainda mais o tamanho da fonte */
+  }
+
+  header {
+    padding: 5px; /* Reduzir o padding ainda mais */
+  }
+
+  input[type="text"],
+  button {
+    width: 100%; /* Ocupar toda a largura da tela */
+    margin: 0.5rem; /* Reduzir a margem */
+  }
+
+  .square {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  #squares {
+    justify-content: space-around; /* Distribuir os quadrados com mais espaço */
+  }
+
+  footer {
+    font-size: 10px; /* Reduzir o tamanho da fonte */
+  }
+}
