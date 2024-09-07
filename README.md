@@ -28,6 +28,8 @@ Este projeto é um jogo de adivinhação de palavras simples, desenvolvido em HT
 2. **Abra o arquivo index.html:** Abra o arquivo index.html em um navegador web.
 3. **Comece a jogar:** Digite suas tentativas no campo de texto e clique no botão "Verificar".
 
+Caso não queira baixar o código, basta acessar [Adivinhar a Palavra](https://alura-imersao-gemini-adivinha-palavra.vercel.app/) para poder jogar, conforme instrução do item 3.
+
 ## Contribuições
 Contribuições são bem-vindas! Se você encontrar algum bug ou tiver alguma sugestão de melhoria, por favor, abra um issue ou faça um pull request.
 
